@@ -115,3 +115,7 @@ make test NVIM=/path/to/nvim
 漢字の読みデータ `lua/dokodemo/kanji.lua` は `scripts/gen_kanji.py` で生成しています。
 元データは Unicode Unihan データベースの `kJapanese` プロパティ（[Unicode License v3](https://www.unicode.org/license.txt)）で、
 SQLite 化されたもの（npm パッケージ [kanji-inspector](https://www.npmjs.com/package/kanji-inspector) の `dist/db/Readings.db`）から変換しています。
+
+## ライセンス
+
+[MIT](LICENSE)。ただし `lua/dokodemo/kanji.lua`（Unihan 由来の漢字読みデータ）は Unicode License v3 に従います（全文は [LICENSE](LICENSE) に記載）。
