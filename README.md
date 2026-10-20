@@ -52,7 +52,7 @@ vim.keymap.set({ "n", "x", "o" }, "s", function() require("dokodemo").jump() end
 
 ## 使い方
 
-1. `s` を押す
+1. `s` を押す (`gs` 等に設定すると flash.nvim と両立できます)
 2. ローマ字（または英字）を入力する。入力するたびに候補が絞り込まれ、ラベルが表示される
 3. ラベルの文字を押すとジャンプ
 
@@ -119,3 +119,4 @@ SQLite 化されたもの（npm パッケージ [kanji-inspector](https://www.np
 ## ライセンス
 
 [MIT](LICENSE)。ただし `lua/dokodemo/kanji.lua`（Unihan 由来の漢字読みデータ）は Unicode License v3 に従います（全文は [LICENSE](LICENSE) に記載）。
+[flash.nvim](https://github.com/folke/flash.nvim) 等のソースは使用していません。
